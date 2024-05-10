@@ -30,33 +30,12 @@ const Menu = () => {
         heading="Today's Offer"
       ></SectionTitle>
       {/* Offered menu items */}
-      <MenuCategory items={offered}></MenuCategory>
+      <MenuCategory items={offered} ></MenuCategory>
       {/* Dessert Menu Items */}
-      <MenuCategory items={desserts} title="Dessert" img={dessertImg}></MenuCategory>
-      <div className="grid place-items-center">
-        <button className="btn btn-outline border-0 border-b-4 mt-4 mb-4">
-        ORDER YOUR FAVOURITE FOOD
-        </button>
-      </div>
+      <MenuCategory items={desserts} title="dessert" img={dessertImg}></MenuCategory>
       <MenuCategory items={pizza} title="pizza" img={pizzaImg}></MenuCategory>
-      <div className="grid place-items-center">
-        <button className="btn btn-outline border-0 border-b-4 mt-4 mb-4">
-        ORDER YOUR FAVOURITE FOOD
-        </button>
-      </div>
       <MenuCategory items={salad} title="salad" img={saladImg}></MenuCategory>
-      <div className="grid place-items-center">
-        <button className="btn btn-outline border-0 border-b-4 mt-4 mb-4">
-        ORDER YOUR FAVOURITE FOOD
-        </button>
-      </div>
       <MenuCategory items={soup} title="soup" img={soupImg}></MenuCategory>
-      
-      <div className="grid place-items-center">
-        <button className="btn btn-outline border-0 border-b-4 mt-4 mb-4">
-        ORDER YOUR FAVOURITE FOOD
-        </button>
-      </div>
     </div>
   );
 };
