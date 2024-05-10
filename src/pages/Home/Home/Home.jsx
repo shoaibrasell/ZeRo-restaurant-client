@@ -7,10 +7,14 @@ import ChefRecommends from '../ChefRecommends/ChefRecommends';
 import Featured from '../Featured/Featured';
 import Testimonials from '../Testimonials/Testimonials';
 import ContactInfo from '../ContactInfo/ContactInfo';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>ZeRo | Home</title>
+            </Helmet>
             <Banner/>
             <Category/>
             <BistroBox/>

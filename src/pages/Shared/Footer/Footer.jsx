@@ -57,7 +57,7 @@ const Footer = () => {
       </footer>
       <div className="footer-center text-white p-4 bg-black">
         <aside>
-          <p>Copyright © {currentYear} - All right reserved by ZeRo </p>
+          <p>Copyright © {currentYear} - All right reserved by ZeRo Restaurant -- Shoaib Ullah Rasel</p>
         </aside>
       </div>
     </div>
