@@ -1,14 +1,19 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Footer from '../pages/Shared/Footer/Footer';
 import Navbar from '../pages/Shared/Navbar/Navbar';
 
 const Main = () => {
+    const location = useLocation()
+    console.log(location);
+    const hideHeaderFooter = location.pathname.includes('login')
     return (
         <div>
-            <Navbar></Navbar>
+            {/* || condition true then hide header footer  */}
+            {hideHeaderFooter || <Navbar></Navbar>}
             <Outlet></Outlet>
-            <Footer></Footer>
+            {/* || condition true then hide the header footer */}
+            {hideHeaderFooter || <Footer></Footer>}
         </div>
     );
 };
