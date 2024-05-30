@@ -21,10 +21,12 @@ const Navbar = () => {
       <li>
         <Link to="/order/salad">Food Order</Link>
       </li>
-      
+      <li>
+        <Link to="/secret">Secret</Link>
+      </li>
       {
         user ? <> 
-        <button onClick={handleLogOut} className="btn btn-ghost">Button</button>
+        <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
         </> : <>
         <li>
         <Link to="/login">Login</Link>
